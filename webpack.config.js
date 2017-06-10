@@ -25,8 +25,15 @@ var config = {
             ],
             loader: 'babel-loader',
             options: {
-                presets: ['react']
+                presets: ['env','react']
             }
+          },
+          {
+            test:/\.css$/,
+            use:[
+              'style-loader',
+              'css-loader'
+            ]
           }
       ]
     },

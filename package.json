@@ -4,11 +4,11 @@
   "description": "A extremely basic WebPack/React starter kit. Comes with the bare necesseties required to run React with WebPack as the module loader.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build",
+    "dev": "webpack-dev-server --open --devtool eval --progress --colors --content-base build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev":"webpack",
-    "build:prod":"webpack -p",
-    "start":"webpack-dev-server"
+    "build:dev": "webpack",
+    "build:prod": "webpack -p",
+    "start": "webpack-dev-server --open"
   },
   "author": "Raviteja Daggupati",
   "license": "ISC",
@@ -19,8 +19,11 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
     "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }
