@@ -1,4 +1,11 @@
+var HTMLWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+
+var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
+  template: __dirname + '/build/index.html',
+  filename: 'index.html',
+  inject: 'body'
+});
 
 var config = {
     entry: [__dirname + '/app/main.js'],
@@ -24,7 +31,10 @@ var config = {
       ]
     },
     devtool: "source-map",
-    context: __dirname
+    context: __dirname,
+    plugins: [
+      HTMLWebpackPluginConfig
+    ],
 };
 
 
