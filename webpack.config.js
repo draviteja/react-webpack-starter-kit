@@ -10,7 +10,7 @@ var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 var config = {
     entry: [__dirname + '/app/main.js'],
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     module: {

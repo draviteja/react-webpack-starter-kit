@@ -1,11 +1,10 @@
 {
   "name": "reactwebpack",
   "version": "1.0.0",
-  "description": "A extremely basic WebPack/React starter kit. Comes with the bare necesseties required to run React with WebPack as the module loader.",
+  "description": "A extremely basic React/Webpack starter kit. Comes with the bare necesseties required to run React with WebPack as the module loader.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --devtool eval --progress --colors --content-base build",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack",
     "build:prod": "webpack -p",
     "start": "webpack-dev-server --open"

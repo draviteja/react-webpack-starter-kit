@@ -1,5 +1,8 @@
-var ReactDOM = require('react-dom');
 var React = require('react');
-import AppComponent from './AppComponent';
+var ReactDOM = require('react-dom');
+require('./style.css')
+import HelloWorld from './components/Hello';
 
-ReactDOM.render(<AppComponent/>, document.getElementById('app'));
+ReactDOM.render(
+  <HelloWorld />, document.getElementById('app')
+);
