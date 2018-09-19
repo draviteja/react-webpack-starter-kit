@@ -2,13 +2,13 @@ var HTMLWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: __dirname + '/app/index.html',
+  template: __dirname + '/public/index.html',
   filename: 'index.html',
   inject: 'body'
 });
 
 var config = {
-    entry: [__dirname + '/app/main.js'],
+    entry: [__dirname + '/src/index.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -18,7 +18,7 @@ var config = {
           {
             test: /\.(js|jsx)$/,
             include: [
-              path.resolve(__dirname, "app")
+              path.resolve(__dirname, "src")
             ],
             exclude: [
               path.resolve(__dirname, "node_modules")
