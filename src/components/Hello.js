@@ -1,13 +1,13 @@
-var React = require('react');
+import React from 'react';
 
-var Hello = React.createClass({
-    render: function () {
-        return (
-          <div style={{textAlign: 'center'}}>
-            <h1>Hello World</h1>
-          </div>
-        );
-    }
-});
-
-module.exports = Hello;
+class Hello extends React.Component {
+  render(){
+    return (
+      <div style={{textAlign: 'center'}}>
+        <h1>Hello World</h1>
+      </div>
+    );
+  }
+}
+ 
+export default Hello;
